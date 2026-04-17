@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+</head>
+<body>
+
+<h2>🎓 Student Performance Predictor</h2>
+
+<label>Study Hours:</label>
+<select id="study">
+    <option value="0">Low</option>
+    <option value="1">Medium</option>
+    <option value="2">High</option>
+</select><br><br>
+
+<label>Attendance:</label>
+<select id="attendance">
+    <option value="0">Poor</option>
+    <option value="1">Average</option>
+    <option value="2">Good</option>
+</select><br><br>
+
+<label>Sleep:</label>
+<select id="sleep">
+    <option value="0">Poor</option>
+    <option value="1">Normal</option>
+    <option value="2">Good</option>
+</select><br><br>
+
+<label>Motivation:</label>
+<select id="motivation">
+    <option value="0">Low</option>
+    <option value="1">Medium</option>
+    <option value="2">High</option>
+</select><br><br>
+
+<label>Previous Grades:</label>
+<select id="grades">
+    <option value="0">Poor</option>
+    <option value="1">Average</option>
+    <option value="2">Good</option>
+</select><br><br>
+
+<button onclick="predict()">Predict</button>
+
+<h3 id="result"></h3>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
