@@ -15,6 +15,7 @@ def predict():
     result = inference.query(
         variables=['Performance'],
         evidence={
+            'IQ': int(data['iq']),
             'StudyHours': int(data['study']),
             'Attendance': int(data['attendance']),
             'Sleep': int(data['sleep']),

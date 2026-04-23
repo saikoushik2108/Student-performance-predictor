@@ -7,39 +7,71 @@
 
 <h2>🎓 Student Performance Predictor</h2>
 
-<label>Study Hours:</label>
+<h3>⏱️ Time Left: <span id="timer">30</span> seconds</h3>
+
+<h3>🧠 IQ Test</h3>
+
+<div id="quiz">
+
+<p>1. 2, 4, 8, 16, ?</p>
+<input type="radio" name="q1" value="0">18
+<input type="radio" name="q1" value="1">32
+<input type="radio" name="q1" value="0">24
+
+<p>2. Odd one?</p>
+<input type="radio" name="q2" value="0">Apple
+<input type="radio" name="q2" value="1">Car
+<input type="radio" name="q2" value="0">Banana
+
+<p>3. 5 + 3 × 2 = ?</p>
+<input type="radio" name="q3" value="0">16
+<input type="radio" name="q3" value="1">11
+<input type="radio" name="q3" value="0">13
+
+<p>4. A, C, E, G, ?</p>
+<input type="radio" name="q4" value="1">I
+<input type="radio" name="q4" value="0">H
+<input type="radio" name="q4" value="0">J
+
+<p>5. Mirror of 6?</p>
+<input type="radio" name="q5" value="1">9
+<input type="radio" name="q5" value="0">6
+<input type="radio" name="q5" value="0">3
+
+</div>
+
+<hr>
+
+<h3>📊 Student Details</h3>
+
 <select id="study">
-    <option value="0">Low</option>
-    <option value="1">Medium</option>
-    <option value="2">High</option>
+<option value="0">Study: Low</option>
+<option value="1">Study: Medium</option>
+<option value="2">Study: High</option>
 </select><br><br>
 
-<label>Attendance:</label>
 <select id="attendance">
-    <option value="0">Poor</option>
-    <option value="1">Average</option>
-    <option value="2">Good</option>
+<option value="0">Attendance: Poor</option>
+<option value="1">Attendance: Average</option>
+<option value="2">Attendance: Good</option>
 </select><br><br>
 
-<label>Sleep:</label>
 <select id="sleep">
-    <option value="0">Poor</option>
-    <option value="1">Normal</option>
-    <option value="2">Good</option>
+<option value="0">Sleep: Poor</option>
+<option value="1">Sleep: Normal</option>
+<option value="2">Sleep: Good</option>
 </select><br><br>
 
-<label>Motivation:</label>
 <select id="motivation">
-    <option value="0">Low</option>
-    <option value="1">Medium</option>
-    <option value="2">High</option>
+<option value="0">Motivation: Low</option>
+<option value="1">Motivation: Medium</option>
+<option value="2">Motivation: High</option>
 </select><br><br>
 
-<label>Previous Grades:</label>
 <select id="grades">
-    <option value="0">Poor</option>
-    <option value="1">Average</option>
-    <option value="2">Good</option>
+<option value="0">Grades: Poor</option>
+<option value="1">Grades: Average</option>
+<option value="2">Grades: Good</option>
 </select><br><br>
 
 <button onclick="predict()">Predict</button>
